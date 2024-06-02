@@ -26,11 +26,11 @@ public class DriverSetup {
 //		
 //	}
 	
-	public WebDriver setDriver2() {
-		System.setProperty("webdriver.edge.driver","D:\\OneDrive\\edgedriver_win64\\msedgedriver.exe");
-		driver = new EdgeDriver();
-		return driver;
-		
-	}
+//	public WebDriver setDriver2() {
+//		System.setProperty("webdriver.edge.driver","D:\\OneDrive\\edgedriver_win64\\msedgedriver.exe");
+//		driver = new EdgeDriver();
+//		return driver;
+//		
+//	}
 	
 }
