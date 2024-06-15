@@ -1,24 +1,21 @@
-import java.time.Duration;
+
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Reporter;
+
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-
 
 public class Main extends TestBase{
 
 	Locators locators = new Locators();
 	
+	
 	@BeforeSuite
 	public void DriverSetup() {
 		WebDriver driver = super.setDriver("Edge");
-		
 	}
 	
 	@BeforeTest
@@ -26,7 +23,9 @@ public class Main extends TestBase{
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		
-		
+//		String sheetName = "Sheet Name";
+//		String testCase = "TestCase-Rowname";
+//		test = excelUtil.getData(sheetName, testCase);		
 	}
 	
 	@Test
@@ -40,7 +39,8 @@ public class Main extends TestBase{
 		super.javascriptEnter("paul", email);
 		super.javascriptClick(login);
 		
-
+//		System.out.println(super.getTestData());
+//		super.javascriptEnter(test.get("columnName"), email);
+		
 	}
-
 }

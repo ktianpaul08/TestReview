@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-02T09:03:44 CST" name="Default suite" finished-at="2024-06-02T09:03:46 CST" duration-ms="2161">
+  <suite started-at="2024-06-05T19:17:08 CST" name="Default suite" finished-at="2024-06-05T19:17:10 CST" duration-ms="2357">
     <groups>
     </groups>
-    <test started-at="2024-06-02T09:03:44 CST" name="Default test" finished-at="2024-06-02T09:03:46 CST" duration-ms="2161">
+    <test started-at="2024-06-05T19:17:08 CST" name="Default test" finished-at="2024-06-05T19:17:10 CST" duration-ms="2357">
       <class name="Main">
-        <test-method is-config="true" signature="DriverSetup()[pri:0, instance:Main@593aaf41]" started-at="2024-06-02T09:03:38 CST" name="DriverSetup" finished-at="2024-06-02T09:03:44 CST" duration-ms="5696" status="PASS">
+        <test-method is-config="true" signature="DriverSetup()[pri:0, instance:Main@3ee37e5a]" started-at="2024-06-05T19:17:04 CST" name="DriverSetup" finished-at="2024-06-05T19:17:08 CST" duration-ms="3363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverSetup -->
-        <test-method is-config="true" signature="setUrl()[pri:0, instance:Main@593aaf41]" started-at="2024-06-02T09:03:44 CST" name="setUrl" finished-at="2024-06-02T09:03:46 CST" duration-ms="1584" status="PASS">
+        <test-method is-config="true" signature="setUrl()[pri:0, instance:Main@3ee37e5a]" started-at="2024-06-05T19:17:08 CST" name="setUrl" finished-at="2024-06-05T19:17:10 CST" duration-ms="2033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUrl -->
-        <test-method signature="Testing()[pri:0, instance:Main@593aaf41]" started-at="2024-06-02T09:03:46 CST" name="Testing" finished-at="2024-06-02T09:03:46 CST" duration-ms="509" status="PASS">
+        <test-method signature="Testing()[pri:0, instance:Main@3ee37e5a]" started-at="2024-06-05T19:17:10 CST" name="Testing" finished-at="2024-06-05T19:17:10 CST" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testing -->

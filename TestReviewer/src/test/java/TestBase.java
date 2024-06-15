@@ -1,12 +1,20 @@
+import java.util.HashMap;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import Utility.ExcelUtil;
+
 public class TestBase{
 	
 	WebDriver driver;
 	JavascriptExecutor js;
+	
+	ExcelUtil excelUtil = new ExcelUtil();
+	
+	public HashMap<String, String> test;
 	
 	public WebDriver setDriver(String browser) {
 		switch(browser){
@@ -41,6 +49,13 @@ public class TestBase{
 		js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", element);
 	}
+	
+	
+	public String getTestData() {
+		test = excelUtil.getData("SheetName", "RowName" );
+		return test.get("columnName");
+	}
+	
 	
 	
 }
