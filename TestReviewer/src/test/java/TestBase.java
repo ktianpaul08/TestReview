@@ -51,10 +51,10 @@ public class TestBase{
 	}
 	
 	
-	public String getTestData() {
-		test = excelUtil.getData("SheetName", "RowName" );
-		return test.get("columnName");
-	}
+//	public String getTestData(String text) {
+//		test = excelUtil.getData("Sheet1", "tc1" );
+//		return test.get(text);
+//	}
 	
 	
 	

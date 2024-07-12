@@ -21,7 +21,7 @@ public class ExcelUtil {
 	        FileInputStream fin = null;
 	        XSSFWorkbook workbook = null;
 	        XSSFSheet sheet = null;
-	        final String excelPath = System.getProperty("user.dir") + "/src/main/resources/testdata/TestData.xlsx";
+	        final String excelPath = System.getProperty("user.dir") + "/src/test/resources/TestData/TestData.xlsx";
 
 	        HashMap<String, String> dict = new LinkedHashMap<String, String>();
 

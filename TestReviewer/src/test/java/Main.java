@@ -23,24 +23,30 @@ public class Main extends TestBase{
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		
-//		String sheetName = "Sheet Name";
-//		String testCase = "TestCase-Rowname";
-//		test = excelUtil.getData(sheetName, testCase);		
+		String sheetName = "Sheet1";
+		String testCase = "tc1";
+		test = excelUtil.getData(sheetName, testCase);		
 	}
 	
 	@Test
 	public void Testing()
 	{
 		WebElement email = driver.findElement(By.xpath(locators.email));
+		WebElement password = driver.findElement(By.xpath(locators.password));
 		WebElement login = driver.findElement(By.xpath(locators.login));
 //		email.sendKeys("Paul");
 
 //		js.executeScript("arguments[0].value='paul'", email);
-		super.javascriptEnter("paul", email);
-		super.javascriptClick(login);
+//		super.javascriptEnter("paul", email);
+//		super.javascriptClick(login);
 		
 //		System.out.println(super.getTestData());
-//		super.javascriptEnter(test.get("columnName"), email);
-		
+		super.javascriptEnter(test.get("username"), email);
+		super.javascriptEnter(test.get("password"), password);		
 	}
+	
+//	@Test
+//	public void TestGetData() {
+//		System.out.println(super.getTestData());
+//	}
 }
